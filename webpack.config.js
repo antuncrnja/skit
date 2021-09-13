@@ -1,13 +1,34 @@
 const path = require('path')
 
 module.exports = {
-	entry: './app/app.js',
+	mode: 'production',
+	watch: true,
+	entry: './app/js/app.js',
 	output: {
 		filename: "bundle.js",
 		path: path.resolve(__dirname, 'build')
 	},
 	module: {
 		rules: [
+			{
+				test: /\.scss$/,	
+				exclude: /(node_modules|bower_components)/,
+				use: [
+					'style-loader', 
+					'css-loader', 
+					'sass-loader',
+					{
+						loader: "postcss-loader",
+						options: {
+							postcssOptions: {
+								plugins: [
+									["autoprefixer"],
+								],
+							},
+						},
+					},
+				]
+			},
 		  {
 			test: /\.m?js$/,
 			exclude: /(node_modules|bower_components)/,
@@ -19,7 +40,5 @@ module.exports = {
 			}
 		  }
 		]
-	  },
-	watch: true,
-	mode: 'production',
+	  }
 }

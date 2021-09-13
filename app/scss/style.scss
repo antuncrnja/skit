@@ -1,0 +1,25 @@
+@import "reset";
+@import "media-queries";
+
+$red: black;
+body{
+	margin:0;
+	background: $red;
+	transition: all .3s ease;
+}
+
+h1{
+	color: white;
+	font-size: 50px;
+	transform: scale(1)
+}
+
+p{
+	color: orange;
+	max-width: 500px;
+}
+img{
+	object-fit: cover;
+}
+
+
