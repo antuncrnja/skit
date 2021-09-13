@@ -19,7 +19,6 @@ module.exports = {
 				exclude: /(node_modules|bower_components)/,
 				use: [
 					MiniCssExtractPlugin.loader,
-					//'style-loader', 
 					'css-loader', 
 					'sass-loader',
 					{
