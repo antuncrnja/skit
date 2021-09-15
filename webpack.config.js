@@ -2,7 +2,7 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-	mode: 'production',
+	//mode: 'production',
 	watch: true,
 	entry: './app/js/app.js',
 	output: {
@@ -10,7 +10,9 @@ module.exports = {
 		path: path.resolve(__dirname, 'build')
 	},
 	plugins: [
-		new MiniCssExtractPlugin()
+		new MiniCssExtractPlugin({
+			filename: 'bundle.css'
+		})
 	],
 	module: {
 		rules: [
