@@ -1,25 +1,12 @@
-@import "reset";
-@import "media-queries";
-
-$red: black;
-body{
-	margin:0;
-	background: $red;
-	transition: all .3s ease;
-}
-
-h1{
-	color: white;
-	font-size: 50px;
-	transform: scale(1)
-}
-
-p{
-	color: orange;
-	max-width: 500px;
-}
-img{
-	object-fit: cover;
-}
-
-
+@import "./components/reset";
+@import "./components/colors";
+@import "./components/containers";
+@import "./components/grid";
+@import "./components/text";
+@import "./components/images";
+@import "./components/border-radius";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/margins";
+@import "./components/paddings";
+@import "./components/media-queries";

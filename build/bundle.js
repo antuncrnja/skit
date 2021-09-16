@@ -16,7 +16,7 @@
   \***********************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_tripleMe__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/tripleMe */ \"./app/js/components/tripleMe.js\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/style.scss */ \"./app/scss/style.scss\");\n\n\ndocument.write('<h1>' + (0,_components_tripleMe__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(120) + '</h1>');\n\ndocument.querySelector('h1').onclick = function () {\n  return alert('radi');\n};\n\n//# sourceURL=webpack://webpack/./app/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_tripleMe__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/tripleMe */ \"./app/js/components/tripleMe.js\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/style.scss */ \"./app/scss/style.scss\");\n\n //document.write('<h1>' +  tripleMe(120)  + '</h1>')\n//document.querySelector('h1').onclick = () => alert('radi')\n\n//# sourceURL=webpack://starter-kit/./app/js/app.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
   \***************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ tripleMe; }\n/* harmony export */ });\nfunction tripleMe(x) {\n  return x * 3;\n}\n\n//# sourceURL=webpack://webpack/./app/js/components/tripleMe.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ tripleMe; }\n/* harmony export */ });\nfunction tripleMe(x) {\n  return x * 3;\n}\n\n//# sourceURL=webpack://starter-kit/./app/js/components/tripleMe.js?");
 
 /***/ }),
 
@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*****************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpack/./app/scss/style.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://starter-kit/./app/scss/style.scss?");
 
 /***/ })
 
