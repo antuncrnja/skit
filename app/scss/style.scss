@@ -10,3 +10,12 @@
 @import "./components/margins";
 @import "./components/paddings";
 @import "./components/media-queries";
+
+img.fadein{
+	opacity: 0;
+	transition: all 1s;
+
+}
+.fadein.active{
+	opacity: 1;
+}

@@ -16,7 +16,7 @@
   \***********************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_tripleMe__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/tripleMe */ \"./app/js/components/tripleMe.js\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/style.scss */ \"./app/scss/style.scss\");\n\n //document.write('<h1>' +  tripleMe(120)  + '</h1>')\n//document.querySelector('h1').onclick = () => alert('radi')\n\n//# sourceURL=webpack://starter-kit/./app/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_tripleMe__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/tripleMe */ \"./app/js/components/tripleMe.js\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/style.scss */ \"./app/scss/style.scss\");\n\n //Intersection Observer\n\nvar e = document.querySelectorAll('.fadein');\nvar io = new IntersectionObserver(function (entries) {\n  entries.forEach(function (entry) {\n    if (entry.isIntersecting) entry.target.classList.add('active');else if (entry.boundingClientRect.y > 0) entry.target.classList.remove('active');\n  });\n}, {\n  threshold: 0.1\n});\ne.forEach(function (item) {\n  return io.observe(item);\n});\n\n//# sourceURL=webpack://starter-kit/./app/js/app.js?");
 
 /***/ }),
 

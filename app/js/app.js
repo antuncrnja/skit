@@ -1,6 +1,14 @@
 import tripleMe from './components/tripleMe'
 import '../scss/style.scss'
 
-//document.write('<h1>' +  tripleMe(120)  + '</h1>')
+//Intersection Observer
+	const e = document.querySelectorAll('.fadein');
 
-//document.querySelector('h1').onclick = () => alert('radi')
+	const io = new IntersectionObserver( entries => {
+		entries.forEach( entry => {
+			if(entry.isIntersecting) entry.target.classList.add('active')
+			else if (entry.boundingClientRect.y > 0) entry.target.classList.remove('active')
+		})
+	},{threshold: 0.1})
+
+	e.forEach( item => io.observe(item))
